@@ -1,0 +1,509 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Home Page";
+---
+
+
+<BaseLayout pageTitle={pageTitle}>
+    <div class="main-content-wrapper">
+
+        <!-- intro section -->
+        <section class="py-16">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <nav class="flex-wrap lg:flex items-center justify-between mb-24 xl:mb-48" x-data="{navbarOpen:false}">
+                    <div class="flex items-center mb-10 lg:mb-0">
+                        <!-- <img src="../../../assets/image/navbar-logo.svg" alt="Logo" /> -->
+
+                        <button
+                            class="w-10 h-10 lg:hidden ml-auto flex items-center justify-center text-indigo-800 border border-indigo-800 rounded-md"
+                            @click="navbarOpen = !navbarOpen">
+                            <i data-feather="menu"></i>
+                        </button>
+                    </div>
+
+                    <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:space-x-20 mb-10 xl:mb-0"
+                        :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                        <li
+                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li
+                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="Projects.html">Projects</a>
+                        </li>
+                        <li
+                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="About.html">About</a>
+                        </li>
+                        <li
+                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="Blog.html">Blog</a>
+                        </li>
+                        <li
+                            class="px-8 py-3 font-medium text-indigo-800 text-lg text-center border-2 border-indigo-800 rounded-md hover:bg-indigo-800 hover:text-white transiton ease-linear duration-300">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+
+
+                
+
+                <header class="flex flex-col lg:flex-row justify-between lg:mb-20">
+                    <div class="text-center lg:text-left mb-20 lg:mb-0">
+                        <div class="flex items-center justify-center lg:justify-start gap-2 mb-10">
+                            <span class="w-20 h-0.5 bg-indigo-700"></span>
+
+                            <p class="font-medium text-indigo-700 text-xl">
+                                BERNIE A.
+                            </p>
+                        </div>
+
+                        <h1 class="font-bold text-gray-800 text-4xl md:text-6xl xl:text-7xl mb-10">
+                            Creative thinker.<br />
+                            Problem Solver.
+                            Engineer at heart.
+                        </h1>
+
+                        <p class="font-normal text-gray-650 text-sm md:text-xl xl:text-2xl mb-10">
+                            Hi, I’m Bernie. I’m a software engineer / content creator who finds joy <br /> in coming up
+                            with creative solutions to people's problems. <br />
+                            <br />
+                            <span class=" font-bold text-indigo-800 text-sm md:text-2xl mb-0 "> Specializing in: </span>
+
+                        <ul class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">
+                            <li> &#8226 Custom API development / Third Party Integrations.</li>
+                            <li> &#8226 Specialty tooling.</li>
+                            <li> &#8226 Data extraction through web scraping and automation.</li>
+                            <li> &#8226 Generating actionable insights from data.</li>
+                            <li>&#8226 Innovative Marketing/Content concepts and digital materials creation.</li>
+                            <li>&#8226 Brand Strategist conceiving new product ideas. </li>
+                        </ul>
+                        </br>
+
+
+                        <br />
+                        <span class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">Lets talk about how
+                            we can make something smoother in your business.</span>
+                        </p>
+
+                        <div class="space-y-5 lg:space-x-5 mt-10 mb-10">
+                            <a href="#"
+                                class="block md:inline px-8 py-3 font-medium bg-indigo-800 text-white text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300">Hire
+                                me</a>
+
+                            <a href="#"
+                                class="block md:inline px-8 py-3 font-medium text-indigo-800 text-lg border-2 border-indigo-800 rounded-md hover:bg-indigo-600 hover:text-white transiton ease-linear duration-300">Read
+                                more</a>
+                        </div>
+
+                        <hr class="text-gray-500 mb-5" />
+
+                        <!-- <span class="font-normal text-gray-500 text-sm"
+                                >I am currently open for part-time work.</span
+                            > -->
+                    </div>
+
+                    <div class="mx-auto lg:mx-0">
+                        <!-- <img src="../../../assets/image/home-img.svg" alt="Image" /> -->
+                    </div>
+                </header>
+            </div>
+            <!-- container.// -->
+        </section>
+
+        <!-- Creating from perspective... -->
+        <section class="py-16 lg:mb-10">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <h1
+                    class="font-semibold text-gray-800 text-2xl md:text-3xl xl:text-5xl text-center leading-tight mb-20 xl:mb-20">
+                    Creating from the perspective: </br>
+                    <span class="text-indigo-800">
+                        </br>"There's always a way to improve upon something."
+                    </span>
+                </h1>
+
+                <div class="flex flex-col xl:flex-row gap-16 justify-center" style="border:solid orange 3px">
+
+
+                    <div class="grid grid-cols-2 justify-center text-center xl:text-left md:gap-x-15 xl:gap-x-19 mt-10">
+                        <!-- card -->
+                        <div class="max-w-md rounded overflow-hidden shadow-lg">
+                            <!-- <img class="w-full" src="/img/card-top.jpg"> -->
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Automating Time-consuming Processes</div>
+                                <p class="text-gray-700 text-base">
+                                <p class="font-normal text-gray-500 text-xs md:text-sm mb-5">
+                                    Together we'll take a look at the boring, tedious, monotonous - and give you back
+                                    your time by automating it <br />
+
+                                </p>
+                                </p>
+                                <a href="/projects/#Automation"
+                                    class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
+                                    See Examples
+                                    <i data-feather="arrow-right"></i>
+                                </a>
+                            </div>
+
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                        <!-- card -->
+                        <div class="max-w-md rounded overflow-hidden shadow-lg">
+                            <!-- <img class="w-full" src="/img/card-top.jpg"> -->
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Data Extraction & Analysis</div>
+                                <p class="text-gray-700 text-base">
+                                <p class="font-normal text-gray-500 text-xs md:text-sm mb-5">
+                                    Reach new audiences, identify viable untapped product markets, and increase
+                                    conversions with custom solutions to collecting valuable business relevant data
+                                    produce actionable branding and product concepts <br />
+
+                                </p>
+                                </p>
+                                <a href="#"
+                                    class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
+                                    See Examples
+                                    <i data-feather="arrow-right"></i>
+                                </a>
+                            </div>
+
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                        <!-- card -->
+                        <div class="max-w-md rounded overflow-hidden shadow-lg">
+                            <!-- <img class="w-full" src="/img/card-top.jpg"> -->
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2"> Innovative Branding & Product Concepts</div>
+                                <p class="text-gray-700 text-base">
+                                <p class="font-normal text-gray-500 text-xs md:text-sm mb-5">
+                                    Actionable branding and product concepts to reach new audiences and increase
+                                    conversions. <br />
+
+                                </p>
+                                </p>
+                                <a href="#"
+                                    class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
+                                    See Examples
+                                    <i data-feather="arrow-right"></i>
+                                </a>
+                            </div>
+
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                        <!-- card -->
+                        <div class="max-w-md rounded overflow-hidden shadow-lg">
+                            <!-- <img class="w-full" src="/img/card-top.jpg"> -->
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Custom API Development / Third-party integrations
+                                </div>
+                                <p class="text-gray-700 text-base">
+                                <p class="font-normal text-gray-500 text-xs md:text-sm mb-5">
+                                    We'll work together to build you a custom API for your personal or business use to
+                                    get the data you need on demand that can play nice with other APIs from your
+                                    existing workflow. <br />
+
+                                </p>
+                                </p>
+                                <a href="#"
+                                    class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
+                                    See Examples
+                                    <i data-feather="arrow-right"></i>
+                                </a>
+                            </div>
+
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+                        <!-- card -->
+                        <div class="max-w-md rounded overflow-hidden shadow-lg">
+                            <!-- <img class="w-full" src="/img/card-top.jpg"> -->
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Content Creation / Story Telling</div>
+                                <p class="text-gray-700 text-base">
+                                <p class="font-normal text-gray-500 text-xs md:text-sm mb-5">
+                                    Decide how to best tell your brands story and spread your message with the right
+                                    digital content, on the right platform. <br />
+
+                                </p>
+                                </p>
+                                <a href="#"
+                                    class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
+                                    See Examples
+                                    <i data-feather="arrow-right"></i>
+                                </a>
+                            </div>
+
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                <span
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            </div>
+                        </div>
+                        <!-- end card -->
+
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- container.// -->
+        </section>
+
+
+
+
+        <section class="py-16">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <h1
+                    class="font-semibold text-gray-800 text-center text-xl md:text-3xl xl:text-5xl leading-tight mb-10 md:mb-20 xl:mb-40">
+                    It’s great to always give the customer the <br />
+                    best feed.
+                </h1>
+
+                <div class="flex justify-center space-x-2 md:space-x-5 xl:space-x-8 mb-2 md:mb-5 xl:mb-8">
+                    <div class="space-y-2 md:space-y-5 xl:space-y-8">
+                        <img src="../../../assets/image/image-1.svg" alt="Image"
+                            class="hover:opacity-75 transition ease-in-out duration-300" />
+
+                        <!-- <img
+                                src="../../../assets/image/image-3.svg"
+                                alt="Image"
+                                class="hover:opacity-75 transition ease-in-out duration-300"
+                            /> -->
+                    </div>
+
+                    <div>
+                        <!-- <img
+                                src="../../../assets/image/image-2.svg"
+                                alt="Image"
+                                class="hover:opacity-75 transition ease-in-out duration-300"
+                            /> -->
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <!-- <img
+                            src="../../../assets/image/image-4.svg"
+                            alt="Image"
+                            class="hover:opacity-75 transition ease-in-out duration-300"
+                        /> -->
+                </div>
+            </div>
+            <!-- container.// -->
+        </section>
+
+        <section class="py-8 md:py-16">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                    <div class="text-center mb-10 xl:mb-0">
+                        <div class="flex items-center justify-center">
+                            <div
+                                class="w-24 py-9 flex justify-center bg-indigo-50 text-indigo-500 rounded-md mb-5 md:mb-10">
+                                <i data-feather="bar-chart-2"></i>
+                            </div>
+                        </div>
+
+                        <h2 class="font-semibold text-gray-700 text-xl md:text-3xl mb-5">
+                            Business planning
+                        </h2>
+
+                        <p class="font-normal text-gray-400 text-sm md:text-lg">
+                            Excepteur sint occaecat cupidatat non <br />
+                            proident, sunt in culpa qui officia deserunt <br />
+                            mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                    <div class="text-center mb-10 md:mb-0">
+                        <div class="flex items-center justify-center">
+                            <div
+                                class="w-24 py-9 flex justify-center bg-indigo-50 text-indigo-500 rounded-md mb-5 md:mb-10">
+                                <i data-feather="dollar-sign"></i>
+                            </div>
+                        </div>
+
+                        <h2 class="font-semibold text-gray-700 text-xl md:text-3xl mb-5">
+                            Financial planning
+                        </h2>
+
+                        <p class="font-normal text-gray-400 text-sm md:text-lg">
+                            Excepteur sint occaecat cupidatat non <br />
+                            proident, sunt in culpa qui officia deserunt <br />
+                            mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="flex items-center justify-center">
+                            <div
+                                class="w-24 py-9 flex justify-center bg-indigo-50 text-indigo-500 rounded-md mb-5 md:mb-10">
+                                <i data-feather="search"></i>
+                            </div>
+                        </div>
+
+                        <h2 class="font-semibold text-gray-700 text-xl md:text-3xl mb-5">
+                            Market Analytics
+                        </h2>
+
+                        <p class="font-normal text-gray-400 text-sm md:text-lg">
+                            Excepteur sint occaecat cupidatat non <br />
+                            proident, sunt in culpa qui officia deserunt <br />
+                            mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- container.// -->
+        </section>
+
+        <!-- <section class="py-16 lg:mb-20">
+                <div class="container max-w-screen-xl mx-auto px-4">
+                    <h1
+                        class="font-semibold text-gray-800 text-5xl text-center mb-20 xl:mb-40"
+                    >
+                        Careers
+                    </h1>
+
+                    <div
+                        class="flex flex-col md:flex-row text-center md:text-left md:justify-between"
+                    >
+                        <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                            <h6
+                                class="font-medium text-gray-500 text-base uppercase"
+                            >
+                                Company
+                            </h6>
+
+                            <p class="font-semibold text-gray-600 text-base">
+                                Massa Fames
+                                <span class="font-normal text-gray-400"
+                                    >/ New York</span
+                                >
+                            </p>
+
+                            <p class="font-semibold text-gray-600 text-base">
+                                Massa Fames
+                                <span class="font-normal text-gray-400"
+                                    >/ New York</span
+                                >
+                            </p>
+
+                            <p class="font-semibold text-gray-600 text-base">
+                                Massa Fames
+                                <span class="font-normal text-gray-400"
+                                    >/ New York</span
+                                >
+                            </p>
+
+                            <p class="font-semibold text-gray-600 text-base">
+                                Massa Fames
+                                <span class="font-normal text-gray-400"
+                                    >/ New York</span
+                                >
+                            </p>
+
+                            <p class="font-semibold text-gray-600 text-base">
+                                Massa Fames
+                                <span class="font-normal text-gray-400"
+                                    >/ New York</span
+                                >
+                            </p>
+                        </div>
+
+                        <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                            <h6
+                                class="font-medium text-gray-500 text-base uppercase"
+                            >
+                                Position
+                            </h6>
+
+                            <p class="font-normal text-gray-500 text-base">
+                                Junior Front-End Developer
+                            </p>
+
+                            <p class="font-normal text-gray-500 text-base">
+                                Junior Front-End Developer
+                            </p>
+
+                            <p class="font-normal text-gray-500 text-base">
+                                Junior Front-End Developer
+                            </p>
+
+                            <p class="font-normal text-gray-500 text-base">
+                                Junior Front-End Developer
+                            </p>
+
+                            <p class="font-normal text-gray-500 text-base">
+                                Junior Front-End Developer
+                            </p>
+                        </div>
+
+                        <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                            <h6
+                                class="font-medium text-gray-500 text-base uppercase"
+                            >
+                                Year
+                            </h6>
+
+                            <p class="font-normal text-gray-500 text-base">2016</p>
+
+                            <p class="font-normal text-gray-500 text-base">2016</p>
+
+                            <p class="font-normal text-gray-500 text-base">2016</p>
+
+                            <p class="font-normal text-gray-500 text-base">2016</p>
+
+                            <p class="font-normal text-gray-500 text-base">2016</p>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+    </div>
+</BaseLayout>

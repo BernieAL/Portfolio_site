@@ -1,0 +1,368 @@
+---
+
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ditch - Tailwind Template</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+        integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <div class="main-content-wrapper">
+
+        <!-- intro section -->
+        <section class="py-16">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <nav class="flex-wrap lg:flex items-center justify-between mb-24 xl:mb-48" x-data="{navbarOpen:false}">
+                    <div class="flex items-center mb-10 lg:mb-0">
+                        <img src="assets/image/navbar-logo.svg" alt="Logo" />
+
+                        <button
+                            class="w-10 h-10 lg:hidden ml-auto flex items-center justify-center text-indigo-800 border border-indigo-800 rounded-md"
+                            @click="navbarOpen = !navbarOpen">
+                            <i data-feather="menu"></i>
+                        </button>
+                    </div>
+
+                    <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:space-x-20 mb-10 xl:mb-0"
+                        :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                        <li
+                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li
+                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="Projects.html">Projects</a>
+                        </li>
+                        <li
+                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="About.html">About</a>
+                        </li>
+                        <li
+                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="Blog.html">Blog</a>
+                        </li>
+                        <li
+                            class="px-8 py-3 font-medium text-indigo-800 text-lg text-center border-2 border-indigo-800 rounded-md hover:bg-indigo-800 hover:text-white transiton ease-linear duration-300">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <header class="flex flex-col lg:flex-row justify-between lg:mb-20">
+                    <div class="text-center lg:text-left mb-20 lg:mb-0">
+                        <div class="flex items-center justify-center lg:justify-start gap-2 mb-10">
+                            <span class="w-20 h-0.5 bg-indigo-700"></span>
+
+                            <p class="font-medium text-indigo-700 text-xl">
+
+                            </p>
+                        </div>
+
+                        <h1 class="font-bold text-gray-800 text-4xl md:text-6xl xl:text-7xl mb-10">
+                            Blog <br />
+                        </h1>
+                        <h3 class="font-bold text-indigo-800 text-3xl md:text-4xl xl:text-5xl mb-10">
+                            </br>Collection of writings by me - Observations, Learnings, Project Documentation, How-to's.
+                        </h3>
+                        <hr class="text-gray-500 mb-5" />
+                    </div>
+                </header>
+
+                <!-- blog post container -->
+                <div>
+
+                    <!-- blog post -->
+                    <div class="dark:bg-gray-100 dark:text-gray-800 mb-10">
+                        <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-md dark:bg-gray-50">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm dark:text-gray-600">Jun 1, 2020</span>
+                                <a rel="noopener noreferrer" href="#"
+                                    class="px-2 py-1 font-bold rounded dark:bg-violet-600 dark:text-gray-50 border border-green-200 rounded-full bg-green-100 text-green-600">JAVASCRIPT</a>
+                            </div>
+                            <div class="mt-3">
+                                <a rel="noopener noreferrer" href="#" class="text-2xl font-bold hover:underline">Nos
+                                    creasse
+                                    pendere crescit angelos etc</a>
+                                <p class="mt-5 text-xl hover:underline">Tamquam ita veritas res equidem. Ea in ad expertus paulatim poterunt.
+                                    Imo
+                                    volo aspi novi tur. Ferre hic neque vulgo hae athei spero. Tantumdem naturales
+                                    excaecant
+                                    notaverim etc cau perfacile occurrere. Loco visa to du huic at in dixi aër.</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <a rel="noopener noreferrer" href="#" class="hover:underline dark:text-violet-600">Read
+                                    more</a>
+                                <div>
+                                    <a rel="noopener noreferrer" href="#" class="flex items-center">
+                                        <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar"
+                                            class="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500">
+                                        <span class="hover:underline dark:text-gray-600">Leroy Jenkins</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end blog post -->
+                    <!-- blog post -->
+                    <div class="dark:bg-gray-100 dark:text-gray-800 mb-10">
+                        <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-md dark:bg-gray-50">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm dark:text-gray-600">Jun 1, 2020</span>
+                                <a rel="noopener noreferrer" href="#"
+                                    class="px-2 py-1 font-bold rounded dark:bg-violet-600 dark:text-gray-50 border border-green-200 rounded-full bg-green-100 text-green-600">JAVASCRIPT</a>
+                            </div>
+                            <div class="mt-3">
+                                <a rel="noopener noreferrer" href="#" class="text-2xl font-bold hover:underline">Nos
+                                    creasse
+                                    pendere crescit angelos etc</a>
+                                <p class="mt-5 text-xl hover:underline">Tamquam ita veritas res equidem. Ea in ad expertus paulatim poterunt.
+                                    Imo
+                                    volo aspi novi tur. Ferre hic neque vulgo hae athei spero. Tantumdem naturales
+                                    excaecant
+                                    notaverim etc cau perfacile occurrere. Loco visa to du huic at in dixi aër.</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <a rel="noopener noreferrer" href="#" class="hover:underline dark:text-violet-600">Read
+                                    more</a>
+                                <div>
+                                    <a rel="noopener noreferrer" href="#" class="flex items-center">
+                                        <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar"
+                                            class="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500">
+                                        <span class="hover:underline dark:text-gray-600">Leroy Jenkins</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end blog post -->
+                    <!-- blog post -->
+                    <div class="dark:bg-gray-100 dark:text-gray-800 mb-10">
+                        <div class="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-md dark:bg-gray-50">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm dark:text-gray-600">Jun 1, 2020</span>
+                                <a rel="noopener noreferrer" href="#"
+                                    class="px-2 py-1 font-bold rounded dark:bg-violet-600 dark:text-gray-50 border border-green-200 rounded-full bg-green-100 text-green-600">JAVASCRIPT</a>
+                            </div>
+                            <div class="mt-3">
+                                <a rel="noopener noreferrer" href="#" class="text-2xl font-bold hover:underline">Nos
+                                    creasse
+                                    pendere crescit angelos etc</a>
+                                <p class="mt-5 text-xl hover:underline">Tamquam ita veritas res equidem. Ea in ad expertus paulatim poterunt.
+                                    Imo
+                                    volo aspi novi tur. Ferre hic neque vulgo hae athei spero. Tantumdem naturales
+                                    excaecant
+                                    notaverim etc cau perfacile occurrere. Loco visa to du huic at in dixi aër.</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <a rel="noopener noreferrer" href="#" class="hover:underline dark:text-violet-600">Read
+                                    more</a>
+                                <div>
+                                    <a rel="noopener noreferrer" href="#" class="flex items-center">
+                                        <img src="https://source.unsplash.com/50x50/?portrait" alt="avatar"
+                                            class="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500">
+                                        <span class="hover:underline dark:text-gray-600">Leroy Jenkins</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end blog post -->
+
+                </div>
+                
+                <!-- end blog post container  -->
+
+            </div>
+            <!-- container.// -->
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- <section class="py-16 lg:mb-20">
+                <div class="container max-w-screen-xl mx-auto px-4">
+                    <h1
+                        class="font-semibold text-gray-800 text-5xl text-center mb-20 xl:mb-40"
+                    >
+                        Careers
+                    </h1>
+
+                    <div
+                        class="flex flex-col md:flex-row text-center md:text-left md:justify-between"
+                    >
+                        <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                            <h6
+                                class="font-medium text-gray-500 text-base uppercase"
+                            >
+                                Company
+                            </h6>
+
+                            <p class="font-semibold text-gray-600 text-base">
+                                Massa Fames
+                                <span class="font-normal text-gray-400"
+                                    >/ New York</span
+                                >
+                            </p>
+
+                            <p class="font-semibold text-gray-600 text-base">
+                                Massa Fames
+                                <span class="font-normal text-gray-400"
+                                    >/ New York</span
+                                >
+                            </p>
+
+                            <p class="font-semibold text-gray-600 text-base">
+                                Massa Fames
+                                <span class="font-normal text-gray-400"
+                                    >/ New York</span
+                                >
+                            </p>
+
+                            <p class="font-semibold text-gray-600 text-base">
+                                Massa Fames
+                                <span class="font-normal text-gray-400"
+                                    >/ New York</span
+                                >
+                            </p>
+
+                            <p class="font-semibold text-gray-600 text-base">
+                                Massa Fames
+                                <span class="font-normal text-gray-400"
+                                    >/ New York</span
+                                >
+                            </p>
+                        </div>
+
+                        <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                            <h6
+                                class="font-medium text-gray-500 text-base uppercase"
+                            >
+                                Position
+                            </h6>
+
+                            <p class="font-normal text-gray-500 text-base">
+                                Junior Front-End Developer
+                            </p>
+
+                            <p class="font-normal text-gray-500 text-base">
+                                Junior Front-End Developer
+                            </p>
+
+                            <p class="font-normal text-gray-500 text-base">
+                                Junior Front-End Developer
+                            </p>
+
+                            <p class="font-normal text-gray-500 text-base">
+                                Junior Front-End Developer
+                            </p>
+
+                            <p class="font-normal text-gray-500 text-base">
+                                Junior Front-End Developer
+                            </p>
+                        </div>
+
+                        <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                            <h6
+                                class="font-medium text-gray-500 text-base uppercase"
+                            >
+                                Year
+                            </h6>
+
+                            <p class="font-normal text-gray-500 text-base">2016</p>
+
+                            <p class="font-normal text-gray-500 text-base">2016</p>
+
+                            <p class="font-normal text-gray-500 text-base">2016</p>
+
+                            <p class="font-normal text-gray-500 text-base">2016</p>
+
+                            <p class="font-normal text-gray-500 text-base">2016</p>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+    </div>
+    <footer class="bg-red-50 py-16 mb-10">
+        <div class="container max-w-screen-xl mx-auto px-4">
+            <div class="text-center">
+                <h1 class="font-medium text-gray-700 text-2xl md:text-5xl mb-5">
+                    Contact with me
+                </h1>
+
+                <p class="font-normal text-gray-400 text-sm md:text-lg mb-20">
+                    I’m not currently taking on new client work but feel
+                    free to contact me for any <br />
+                    other inquiries.
+                </p>
+
+                <div class="flex items-center justify-center space-x-4 md:space-x-8">
+                    <a href="#"
+                        class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300">
+                        <i data-feather="twitter"
+                            class="text-gray-500 hover:text-white transition ease-in-out duration-500"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300">
+                        <i data-feather="dribbble"
+                            class="text-gray-500 hover:text-white transition ease-in-out duration-500"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300">
+                        <i data-feather="facebook"
+                            class="text-gray-500 hover:text-white transition ease-in-out duration-500"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300">
+                        <i data-feather="codepen"
+                            class="text-gray-500 hover:text-white transition ease-in-out duration-500"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300">
+                        <i data-feather="at-sign"
+                            class="text-gray-500 hover:text-white transition ease-in-out duration-500"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300">
+                        <i data-feather="instagram"
+                            class="text-gray-500 hover:text-white transition ease-in-out duration-500"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

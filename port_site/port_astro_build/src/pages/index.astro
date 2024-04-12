@@ -1,119 +1,76 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
 const pageTitle = "Home Page";
+
+
 ---
 
 
 <BaseLayout pageTitle={pageTitle}>
-    <div class="main-content-wrapper">
-
-        <!-- intro section -->
-        <section class="py-16">
-            <div class="container max-w-screen-xl mx-auto px-4">
-                <nav class="flex-wrap lg:flex items-center justify-between mb-24 xl:mb-48" x-data="{navbarOpen:false}">
-                    <div class="flex items-center mb-10 lg:mb-0">
-                        <!-- <img src="../../../assets/image/navbar-logo.svg" alt="Logo" /> -->
-
-                        <button
-                            class="w-10 h-10 lg:hidden ml-auto flex items-center justify-center text-indigo-800 border border-indigo-800 rounded-md"
-                            @click="navbarOpen = !navbarOpen">
-                            <i data-feather="menu"></i>
-                        </button>
-                    </div>
-
-                    <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:space-x-20 mb-10 xl:mb-0"
-                        :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
-                        <li
-                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li
-                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
-                            <a href="Projects.html">Projects</a>
-                        </li>
-                        <li
-                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
-                            <a href="About.html">About</a>
-                        </li>
-                        <li
-                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
-                            <a href="Blog.html">Blog</a>
-                        </li>
-                        <li
-                            class="px-8 py-3 font-medium text-indigo-800 text-lg text-center border-2 border-indigo-800 rounded-md hover:bg-indigo-800 hover:text-white transiton ease-linear duration-300">
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-
-
-
-
-
+        
+        <Nav />
                 
+        <!-- PAGE INTRO HEADER -->
+        <header class="flex flex-col lg:flex-row justify-between lg:mb-20">
+            <div class="text-center lg:text-left mb-20 lg:mb-0">
+                <div class="flex items-center justify-center lg:justify-start gap-2 mb-10">
+                    <span class="w-20 h-0.5 bg-indigo-700"></span>
 
-                <header class="flex flex-col lg:flex-row justify-between lg:mb-20">
-                    <div class="text-center lg:text-left mb-20 lg:mb-0">
-                        <div class="flex items-center justify-center lg:justify-start gap-2 mb-10">
-                            <span class="w-20 h-0.5 bg-indigo-700"></span>
+                    <p class="font-medium text-indigo-700 text-xl">
+                        BERNIE A.
+                    </p>
+                </div>
 
-                            <p class="font-medium text-indigo-700 text-xl">
-                                BERNIE A.
-                            </p>
-                        </div>
+                <h1 class="font-bold text-gray-800 text-4xl md:text-6xl xl:text-7xl mb-10">
+                    Creative thinker.<br />
+                    Problem Solver.
+                    Engineer at heart.
+                </h1>
 
-                        <h1 class="font-bold text-gray-800 text-4xl md:text-6xl xl:text-7xl mb-10">
-                            Creative thinker.<br />
-                            Problem Solver.
-                            Engineer at heart.
-                        </h1>
+                <p class="font-normal text-gray-650 text-sm md:text-xl xl:text-2xl mb-10">
+                    Hi, I’m Bernie. I’m a software engineer / content creator who finds joy <br /> in coming up
+                    with creative solutions to people's problems. <br />
+                    <br />
+                    <span class=" font-bold text-indigo-800 text-sm md:text-2xl mb-0 "> Specializing in: </span>
 
-                        <p class="font-normal text-gray-650 text-sm md:text-xl xl:text-2xl mb-10">
-                            Hi, I’m Bernie. I’m a software engineer / content creator who finds joy <br /> in coming up
-                            with creative solutions to people's problems. <br />
-                            <br />
-                            <span class=" font-bold text-indigo-800 text-sm md:text-2xl mb-0 "> Specializing in: </span>
-
-                        <ul class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">
-                            <li> &#8226 Custom API development / Third Party Integrations.</li>
-                            <li> &#8226 Specialty tooling.</li>
-                            <li> &#8226 Data extraction through web scraping and automation.</li>
-                            <li> &#8226 Generating actionable insights from data.</li>
-                            <li>&#8226 Innovative Marketing/Content concepts and digital materials creation.</li>
-                            <li>&#8226 Brand Strategist conceiving new product ideas. </li>
-                        </ul>
-                        </br>
+                <ul class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">
+                    <li> &#8226 Custom API development / Third Party Integrations.</li>
+                    <li> &#8226 Specialty tooling.</li>
+                    <li> &#8226 Data extraction through web scraping and automation.</li>
+                    <li> &#8226 Generating actionable insights from data.</li>
+                    <li>&#8226 Innovative Marketing/Content concepts and digital materials creation.</li>
+                    <li>&#8226 Brand Strategist conceiving new product ideas. </li>
+                </ul>
+                </br>
 
 
-                        <br />
-                        <span class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">Lets talk about how
-                            we can make something smoother in your business.</span>
-                        </p>
+                <br />
+                <span class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">Lets talk about how
+                    we can make something smoother in your business.</span>
+                </p>
 
-                        <div class="space-y-5 lg:space-x-5 mt-10 mb-10">
-                            <a href="#"
-                                class="block md:inline px-8 py-3 font-medium bg-indigo-800 text-white text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300">Hire
-                                me</a>
+                <div class="space-y-5 lg:space-x-5 mt-10 mb-10">
+                    <a href="#"
+                        class="block md:inline px-8 py-3 font-medium bg-indigo-800 text-white text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300">Hire
+                        me</a>
 
-                            <a href="#"
-                                class="block md:inline px-8 py-3 font-medium text-indigo-800 text-lg border-2 border-indigo-800 rounded-md hover:bg-indigo-600 hover:text-white transiton ease-linear duration-300">Read
-                                more</a>
-                        </div>
+                    <a href="#"
+                        class="block md:inline px-8 py-3 font-medium text-indigo-800 text-lg border-2 border-indigo-800 rounded-md hover:bg-indigo-600 hover:text-white transiton ease-linear duration-300">Read
+                        more</a>
+                </div>
 
-                        <hr class="text-gray-500 mb-5" />
+                <hr class="text-gray-500 mb-5" />
 
-                        <!-- <span class="font-normal text-gray-500 text-sm"
-                                >I am currently open for part-time work.</span
-                            > -->
-                    </div>
-
-                    <div class="mx-auto lg:mx-0">
-                        <!-- <img src="../../../assets/image/home-img.svg" alt="Image" /> -->
-                    </div>
-                </header>
+                <!-- <span class="font-normal text-gray-500 text-sm"
+                        >I am currently open for part-time work.</span
+                    > -->
             </div>
-            <!-- container.// -->
-        </section>
+
+            <div class="mx-auto lg:mx-0">
+                <!-- <img src="../../../assets/image/home-img.svg" alt="Image" /> -->
+            </div>
+        </header>
 
         <!-- Creating from perspective... -->
         <section class="py-16 lg:mb-10">
@@ -294,9 +251,6 @@ const pageTitle = "Home Page";
             </div>
             <!-- container.// -->
         </section>
-
-
-
 
         <section class="py-16">
             <div class="container max-w-screen-xl mx-auto px-4">
@@ -505,5 +459,5 @@ const pageTitle = "Home Page";
                 </div>
             </section> -->
 
-    </div>
+   
 </BaseLayout>

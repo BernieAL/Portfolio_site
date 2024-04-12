@@ -1,12 +1,14 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
 import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
 
 
 <html lang="en">
+  
   <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,17 +37,21 @@ const { pageTitle } = Astro.props;
   
   <body>
 
-      <Header />
-      
-      <h1>{pageTitle}</h1>
-      
-      <slot />
-      
-      <Footer />
+    <div class="main-content-wrapper">
 
-      <script>
-        import "../scripts/scripts.js";
-      </script>
+      <section class="py-16">
+        <div class="container max-w-screen-xl mx-auto px-4">
+          <slot />
+        </div>
+      </section>
+    
+    <div>
+      
+    <Footer />
+
+    <script>
+      import "../scripts/scripts.js";
+    </script>
 
   </body>  
 </html>

@@ -10,19 +10,18 @@ const {cardTitle,cardTag1,cardTag2,cardTag3} = Astro.props;
 
 
 <!-- card -->
-<div class="max-w-lg rounded overflow-hidden shadow-lg" style="border: solid purple 2px;">
+<div class="max-w-lg rounded overflow-hidden shadow-lg mb-5" style="border: solid purple 2px;">
     <!-- <img class="w-full" src="/img/card-top.jpg"> -->
     <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{cardTitle}</div>
-        <p class="text-gray-700 text-base">
-        <p class="font-semibold text-md text-gray-500 md:text-md mb-5">
+        <div class="font-bold text-3xl mb-8">{cardTitle}</div>
+        
+        <p>
             <slot name="CardSummary" /> 
             <br />
+        </p>
 
-        </p>
-        </p>
         <a href="/projects/#Automation"
-            class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
+            class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:tet-indigo-600 transition ease-in-out duration-300">
             See Examples
             <i data-feather="arrow-right"></i>
         </a>

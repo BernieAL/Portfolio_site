@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
+import ServiceCard from '../components/ServiceCard.astro';
 const pageTitle = "Home Page";
 ---
 
@@ -76,8 +77,8 @@ const pageTitle = "Home Page";
         </section>
 
         <!-- Creating from perspective... -->
-        <section class="py-16 lg:mb-10">
-            <div class="container max-w-screen-4xl mx-auto px-4" style="border:solid 4px red">
+        <section class="py-16 lg:mb-10" style="border: solid 4px blue;">
+            <div class="container max-w-screen-xl h-auto mx-auto px-4" style="border:solid 4px red">
                 <h1
                     class="font-semibold text-gray-800 text-2xl md:text-3xl xl:text-5xl text-center leading-tight mb-20 xl:mb-20">
                     Creating from the perspective: </br>
@@ -85,164 +86,23 @@ const pageTitle = "Home Page";
                         </br>"There's always a way to improve upon something."
                     </span>
                 </h1>
-
-                <div class="flex flex-col xl:flex-row gap-16 justify-center" style="border:solid orange 3px">
+                
+                <!-- card container -->
+                <div class="flex flex-col xl:flex-row h-auto gap-16 justify-center" style="border:solid orange 3px">
 
                     
                     <!-- <div class="grid grid-cols-2 justify-center text-center max-w-screen-3xl xl:text-left md:gap-x-10 xl:gap-x-20 mt-10"> -->
-                    <div class="grid grid-cols-2 justify-center text-center max-w-screen-3xl xl:text-left md:gap-x-10 xl:gap-x-20 mt-10">    
-                        <!-- card -->
-                        <div class="max-w-lg rounded overflow-hidden shadow-lg " style="border: solid purple 2px;">
-                            <!-- <img class="w-full" src="/img/card-top.jpg"> -->
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Automating Time-consuming Processes</div>
-                                <p class="text-gray-700 text-base">
-                                <p class="font-normal text-gray-500 text-xs md:text-sm mb-5">
-                                    Together we'll take a look at the boring, tedious, monotonous - and give you back
-                                    your time by automating it <br />
-
-                                </p>
-                                </p>
-                                <a href="/projects/#Automation"
-                                    class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
-                                    See Examples
-                                    <i data-feather="arrow-right"></i>
-                                </a>
-                            </div>
-
-                            <div class="px-6 pt-4 pb-2">
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                            </div>
-                        </div>
-                        <!-- end card -->
-
-                        <!-- card -->
-                        <div class="max-w-lg rounded overflow-hidden shadow-lg">
-                            <!-- <img class="w-full" src="/img/card-top.jpg"> -->
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Data Extraction & Analysis</div>
-                                <p class="text-gray-700 text-base">
-                                <p class="font-normal text-gray-500 text-xs md:text-sm mb-5">
-                                    Reach new audiences, identify viable untapped product markets, and increase
-                                    conversions with custom solutions to collecting valuable business relevant data
-                                    produce actionable branding and product concepts <br />
-
-                                </p>
-                                </p>
-                                <a href="#"
-                                    class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
-                                    See Examples
-                                    <i data-feather="arrow-right"></i>
-                                </a>
-                            </div>
-
-                            <div class="px-6 pt-4 pb-2">
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                            </div>
-                        </div>
-                        <!-- end card -->
-
-                        <!-- card -->
-                        <div class="max-w-lg rounded overflow-hidden shadow-lg">
-                            <!-- <img class="w-full" src="/img/card-top.jpg"> -->
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2"> Innovative Branding & Product Concepts</div>
-                                <p class="text-gray-700 text-base">
-                                <p class="font-normal text-gray-500 text-xs md:text-sm mb-5">
-                                    Actionable branding and product concepts to reach new audiences and increase
-                                    conversions. <br />
-
-                                </p>
-                                </p>
-                                <a href="#"
-                                    class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
-                                    See Examples
-                                    <i data-feather="arrow-right"></i>
-                                </a>
-                            </div>
-
-                            <div class="px-6 pt-4 pb-2">
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                            </div>
-                        </div>
-                        <!-- end card -->
-
-                        <!-- card -->
-                        <div class="max-w-lg rounded overflow-hidden shadow-lg">
-                            <!-- <img class="w-full" src="/img/card-top.jpg"> -->
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Custom API Development / Third-party integrations
-                                </div>
-                                <p class="text-gray-700 text-base">
-                                <p class="font-normal text-gray-500 text-xs md:text-sm mb-5">
-                                    We'll work together to build you a custom API for your personal or business use to
-                                    get the data you need on demand that can play nice with other APIs from your
-                                    existing workflow. <br />
-
-                                </p>
-                                </p>
-                                <a href="#"
-                                    class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
-                                    See Examples
-                                    <i data-feather="arrow-right"></i>
-                                </a>
-                            </div>
-
-                            <div class="px-6 pt-4 pb-2">
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                            </div>
-                        </div>
-                        <!-- end card -->
-
-                        <!-- card -->
-                        <div class="max-w-lg rounded overflow-hidden shadow-lg">
-                            <!-- <img class="w-full" src="/img/card-top.jpg"> -->
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Content Creation / Story Telling</div>
-                                <p class="text-gray-700 text-base">
-                                <p class="font-normal text-gray-500 text-xs md:text-sm mb-5">
-                                    Decide how to best tell your brands story and spread your message with the right
-                                    digital content, on the right platform. <br />
-
-                                </p>
-                                </p>
-                                <a href="#"
-                                    class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300">
-                                    See Examples
-                                    <i data-feather="arrow-right"></i>
-                                </a>
-                            </div>
-
-                            <div class="px-6 pt-4 pb-2">
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                                <span
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                            </div>
-                        </div>
-                        <!-- end card -->
+                    <div class="grid grid-cols-2 justify-center text-center xl:text-left md:gap-x-10 xl:gap-x-20 mt-10">    
+                        
+                        <ServiceCard 
+                            cardTitle="Automation" 
+                            cardTag1 ="photography"
+                            cardTag2 ="test" 
+                            cardTag3 ="test2">
+                            <p slot="CardSummary">Together we'll take a look at the boring, tedious, monotonous - and give you back your time by automating it <br /></p>
+                        </ServiceCard>
+                        
+                        
 
 
 

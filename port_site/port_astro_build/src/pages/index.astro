@@ -37,29 +37,26 @@ const pageTitle = "Home Page";
                             <span class=" font-bold text-indigo-800 text-sm md:text-2xl mb-0 "> Specializing in: </span>
 
                         <ul class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">
-                            <li> &#8226 Custom API development / Third Party Integrations.</li>
-                            <li> &#8226 Specialty tooling.</li>
-                            <li> &#8226 Data extraction through web scraping and automation.</li>
-                            <li> &#8226 Generating actionable insights from data.</li>
-                            <li>&#8226 Innovative Marketing/Content concepts and digital materials creation.</li>
-                            <li>&#8226 Brand Strategy conceiving new product ideas. </li>
+                            <li class="mb-1"> &#8226 Custom API development / Third Party Integrations.</li>
+                            <li class="mb-1"> &#8226 Specialty tooling + Process Automation</li>
+                            <li class="mb-1"> &#8226 Data extraction through API consumption and web scraping.</li>
+                            <li class="mb-1"> &#8226 Generating informative  & actionable insights from data.</li>
+                            <li class="mb-1">&#8226 Innovative & engaging marketing concepts with roadmapping 
+                            <li class="mb-1">&#8226 New Product Ideas to expand market
                         </ul>
                         </br>
 
 
                         <br />
-                        <span class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">Lets talk about how
-                            we can make something smoother in your business.</span>
+                        <span class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">Click "Learn More" to see explore areas that improve your business operations</span>
                         </p>
 
                         <div class="space-y-5 lg:space-x-5 mt-10 mb-10">
                             <a href="#"
-                                class="block md:inline px-8 py-3 font-medium bg-indigo-800 text-white text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300">Hire
-                                me</a>
+                                class="block md:inline px-8 py-3 font-medium bg-indigo-800 text-white text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300">See Client Success Stories</a>
 
                             <a href="#"
-                                class="block md:inline px-8 py-3 font-medium text-indigo-800 text-lg border-2 border-indigo-800 rounded-md hover:bg-indigo-600 hover:text-white transiton ease-linear duration-300">Read
-                                more</a>
+                                class="block md:inline px-8 py-3 font-medium text-indigo-800 text-lg border-2 border-indigo-800 rounded-md hover:bg-indigo-600 hover:text-white transiton ease-linear duration-300">Contact</a>
                         </div>
 
                         <hr class="text-gray-500 mb-5" />
@@ -76,6 +73,44 @@ const pageTitle = "Home Page";
             </div>
         </section>
 
+
+
+
+        <section class="py-16 lg:mb-10" style="border: solid 4px blue;">
+            <div class="container max-w-screen-xl h-auto mx-auto px-4" style="border:solid 4px red">
+                <h1
+                    class="font-semibold text-gray-800 text-2xl md:text-3xl xl:text-5xl text-center leading-tight mb-20 xl:mb-20">
+                    </br>
+
+
+                    <span class="text-indigo-800">
+                        </br>Common client scenarios:
+                    </span>
+
+                </h1> 
+
+                <span class="text-indigo-800 text-1xl md:text-1xl xl:text-2xl text-center">
+                </br>"This takes forever, I wish there was a way to automate this"
+                </span>
+
+                <span class="text-indigo-800 text-1xl md:text-1xl xl:text-2xl text-center">
+                </br>"If I could get data from here, that would help me so much"
+                </span>
+
+                <span class="text-indigo-800 text-1xl md:text-1xl xl:text-2xl text-center">
+                </br>"Theres an API for their service but I dont know how to work with it"
+                </span>
+
+                <span class="text-indigo-800 text-1xl md:text-1xl xl:text-2xl text-center">
+                </br>"I dont know how to get insights from my raw business data"
+                </span>
+
+                <span class="text-indigo-800 text-1xl md:text-1xl xl:text-2xl text-center">
+                </br>"Im not seeing return on my ads - I need a way to attract more attention and increase conversions"
+                </span>
+
+        </section>
+            
         <!-- Creating from perspective... -->
         <section class="py-16 lg:mb-10" style="border: solid 4px blue;">
             <div class="container max-w-screen-xl h-auto mx-auto px-4" style="border:solid 4px red">
@@ -96,19 +131,20 @@ const pageTitle = "Home Page";
                         
                         <ServiceCard 
                             cardTitle="Automation" 
-                            cardTag1 ="photography"
-                            cardTag2 ="test" 
-                            cardTag3 ="test2">
-                            <p class="font-semibold text-md text-gray-9 md:text-md mb-5" slot="CardSummary">Together we'll take a look at the boring, tedious, monotonous - and give you back your time by automating it <br />
+                            cardTag1 ="process automation"
+                            cardTag2 ="workflow optimization" 
+                            cardTag3 ="custom scripting">
+                            <p class="font-semibold text-md text-gray-9 md:text-md mb-5" slot="CardSummary">Together we'll do a deep-dive on your business workflow, identifying areas and processes where automation can be implmeneted to earn you back some time. <br />
                             </p>
                         </ServiceCard>
 
                         <ServiceCard 
-                            cardTitle="Automation" 
+                            cardTitle="Data Extraction" 
                             cardTag1 ="photography"
                             cardTag2 ="test" 
                             cardTag3 ="test2">
-                            <p slot="CardSummary">Together we'll take a look at the boring, tedious, monotonous - and give you back your time by automating it <br /></p>
+                            <p slot="CardSummary">Is there some data that would be absolutely vital to your business but you arent sure how to retreive or access it? <br /></p>
+                            <p slot="CardSummary"> <br /></p>
                         </ServiceCard>
 
                         <ServiceCard 
@@ -143,17 +179,23 @@ const pageTitle = "Home Page";
                             cardTag3 ="test2">
                             <p slot="CardSummary">Together we'll take a look at the boring, tedious, monotonous - and give you back your time by automating it <br /></p>
                         </ServiceCard>
-                        
-                        
-
-
-
-
-
-
-                    </div>
-
+                    </div> 
                 </div>
+
+
+
+               
+                <span class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">Click "Learn More" to see Explore Areas we can optimize your business operations.</span>
+                <div class="space-y-5 lg:space-x-5 mt-10 mb-10">
+                    
+                    <a href="#"
+                        class="block md:inline px-8 py-3 font-medium bg-indigo-800 text-white text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300">See Client Success Stories</a>
+
+                    <a href="#"
+                        class="block md:inline px-8 py-3 font-medium text-indigo-800 text-lg border-2 border-indigo-800 rounded-md hover:bg-indigo-600 hover:text-white transiton ease-linear duration-300">Contact</a>
+                </div>
+
+
             </div>
             <!-- container.// -->
         </section>

@@ -2,6 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 const pageTitle = "Home Page";
+
+const skills1 = ["Linux","Docker","Nginx","Python","JavaScript","React","Selenium","Pandas","RabbitMQ"] 
+const skills2 = []
 ---
 
 
@@ -52,34 +55,54 @@ const pageTitle = "Home Page";
 
                         <!-- what i do now -->
 
-                    <h2 class="font-bold text-gray-800 text-2xl md:text-2xl xl:text-4xl mb-10">Skills
+                    <h2 class="font-bold text-gray-800 text-2xl md:text-2xl xl:text-4xl  ">Skills
                         <br />
                         <br />
-                        <ul class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">
-                            <li> &#8226 <span class="font-bold">Tech: </span> Linux, Docker, Nginx, Python, JavaScript, React, Selenium, Pandas, RabbitMQ, PostgresQL, API construction/consumption  </li>
-                            <li> &#8226 Creating a custom API that performs data gathering and insight reporting</li>
-                            <li> &#8226 brainstorming marketing concepts for branding and social media</li>
-                        </ul>
                     </h2>
+
+                    <div class="grid grid-cols-2 mb-10"> 
+                        
+                        <!-- left col list -->
+                        <ul class="font-bold text-indigo-800 mb-0 text-sm md:text-xl xl:text-2xl">
+                            <li>&#8226  Linux</li>
+                            <li>&#8226  Docker</li>
+                            <li>&#8226  Python</li>
+                            <li>&#8226  React</li>
+                            <li>&#8226  JavaScript</li>
+                            <li>&#8226  Pandas</li>
+                        </ul>
+                        
                     
-                    <h2 class="font-bold text-gray-800 text-2xl md:text-2xl xl:text-4xl mb-10">What Should You Know?</h2>
-                    <p class="font-normal text-gray-650 text-sm md:text-xl xl:text-2xl mb-10">
+                        <!-- right col list -->
+                        <ul class="font-bold text-indigo-800  mb-0 text-sm md:text-xl xl:text-2xl">
+                            
+                            <li>&#8226  Nginx</li>
+                            <li>&#8226  RabbitMQ</li>
+                            <li>&#8226  Data Analysis</li>
+                            <li>&#8226  SQL · MySQL · ETL · PostgreSQL</li>
+                            <li>&#8226  OOP - Object Orieted Programming</li>                               
+                        </ul>
+                    </div>
+        
+                    
+                    <!-- <h2 class="font-bold text-gray-800 text-2xl md:text-2xl xl:text-4xl mb-10">What Should You Know?</h2>
+                    <p class="font-normal text-gray-650 text-sm md:text-xl xl:text-2xl mb-10"> -->
                         
                     </p>
 
                     <h2 class="font-bold text-gray-800 text-2xl md:text-2xl xl:text-4xl mb-10">What I do now?</h2>
                     <p class="font-normal text-gray-650 text-sm md:text-xl xl:text-2xl mb-10">
 
-                        Currently, im working as a contracted software engineer / solutions consultant / content
+                        Currently, im working as a freelance software engineer / solutions consultant / content
                         creator. Depending on the client and the day, I might be: <br />
                     <ul class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">
                         <li> &#8226 Scripting a tool to automate some workflow process</li>
-                        <li> &#8226 Creating a custom API that performs data gathering and insight reporting</li>
-                        <li> &#8226 brainstorming marketing concepts for branding and social media</li>
+                        <li> &#8226 Creating an API that performs data gathering and report generation</li>
+                        <li> &#8226 Brainstorming marketing concepts for branding and social media</li>
                     </ul>
                     <br />
                     <h3 class="font-normal text-gray-650 mb-0 text-sm md:text-xl xl:text-2xl">
-                        My most work recent is with a women's jewelry and accessory Ecommerce brand. I was brought in to improve their product SEO by scraping competitor listings for keywords for analysis and producing a report on which should be implemented on existing product listings. 
+                        My most work recent is with a women's jewelry and accessory Ecommerce brand. I was brought in to improve their product SEO by scraping competitor listings for keywords, to later analyze and produce a report on which keywords should produce the most exposure and in turn, increase click-through and conversions.
                         
                         <br />
                         <br />
@@ -96,8 +119,17 @@ const pageTitle = "Home Page";
 
                     <h2 class="font-bold text-gray-800 text-2xl md:text-2xl xl:text-4xl mb-10">What I did Before?</h2>
 
+                    <div>
+                        <h2 class="font-bold text-gray-800 text-2xl md:text-2xl xl:text-4xl mb-10 "> Software Engineer at Capgemini</h2>
+                            <p> platform migration from legacy system to cloud paas </p>
+                        <h2 class="font-bold text-gray-800 text-2xl md:text-2xl xl:text-4xl mb-10"> StateFarm Claims Liason</h2>
+
+                    </div>
+                    
+                        
+
                     Software Engineer at Capgemini
-                    duckcreek. platform migration from legacy system to cloud paas
+                    duckcreek. 
 
                     StateFarm claims liason
 
